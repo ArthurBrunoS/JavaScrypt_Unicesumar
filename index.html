@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Arthur Bruno - Sobre mim</title>
+</head>
+<body>
+    <header>
+        <img src="./WhatsApp Image 2025-03-06 at 09.08.49.jpeg" alt="Foto de Arthur">
+        <div>
+            <h1>Arthur Bruno</h1>
+            <p class="cargo">Estudante de Engenharia de Software</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre mim</h2>
+            <p>Olá! Sou Estudante de Engenharia de Software. Estou me desenvolvenvendo na parte
+                de front-end mas tenho interesse em futuramente me tornar full-stack.
+            </p>
+            <p class="destaque">
+                Esta é minha primeira página feita do zero com HTML e CSS.
+            </p>
+        </section>
+
+        <section  class="skills">
+            <h2>O que estou aprendendo</h2>
+            <ul class="lista-skills"></ul>
+            <form class="form-skill">
+                <label for="novo-skill">Adicionar skill</label>
+                <input
+                id="novo-skill"
+                name="skill"
+                type="text"
+                placeholder="Ex: Git"
+                required
+                >
+                <button type="submit">Salvar skills</button>
+            </form>
+        </section>
+
+
+
+        <section>
+            <h2>Meus Projetos</h2>
+            <div class="projetos">
+                <article>
+                    <div class="projeto-imagem  projeto-1"></div>
+                        <h3>Calculadora IMC</h3>
+                        <p>App de calculadora simples feito com HTML,CSS e JS puro.</p>
+                        <a href="#">Ver projeto</a> 
+                </article>
+
+                <article>
+                    <div class="projeto-imagem  projeto-2"></div>
+                        <h3>Lista de tarefas</h3>
+                        <p>Blog reposnsivo construido do zero.</p>
+                        <a href="#">Ver projeto</a> 
+                </article>
+
+                <article>
+                    <div class="projeto-imagem projeto-3"></div>
+                        <h3>Blog</h3>
+                        <p>App de calculadora simples feito com HTML,CSS e JS puro</p>
+                        <a href="#">Ver projeto</a> 
+                </article>
+            </div>
+
+        </section>
+
+
+        <section>
+            <h2>Vamos conversar ?</h2>
+            <p>Você pode me encontrar nos meus perfis ou enviar uma mensagem.</p>
+            <div class="redes">
+            <a href="https://github.com/Arthusao22" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            
+            </div>
+            <button class="btn-mensagem">Enviar mensagens</button>
+
+            <form class="formulario-contato escondido">
+                <label>Nome</label>
+                <input type="text" class="input-nome">
+
+                <label>Email</label>
+                <input type="email" class="input-email">
+
+                <label>Mensagem</label>
+                <input type="text" class="input-mensagem">
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="feedback"></div>
+        </section>
+
+        <footer>
+            <p>Feito com HTML e CSS em 2026</p>
+        </footer>
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
