@@ -1,5 +1,5 @@
 const formSkill = document.querySelector(".form-skill")
-const inputSkill = document.getElementById("nova-skill")
+const inputSkill = document.getElementById("novo-skill")
 const listaSkills = document.querySelector(".lista-skills");
 
 const skillsPadrao = [
@@ -37,7 +37,7 @@ const salvarSkills = () => {
 };
 
 formSkill.addEventListener("submit", (evento) => {
-evento.preventDefault
+evento.preventDefault();
 
 const novaSkill = inputSkill.value.trim();
 if(!novaSkill){
@@ -48,8 +48,8 @@ skills.push(novaSkill);
 salvarSkills();
 renderizarSkills();
 
-formSkill();
-inputNome.focus()
+formSkill.reset();
+inputSkill.focus();
 
 })
 
