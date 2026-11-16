@@ -342,3 +342,17 @@ footer{
         width: 100%;
     }
 }
+:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 3px; }
+.projetos { grid-template-columns: 1fr; }
+.projetos article a { padding: .25rem 0; }
+footer { color: #475569; }
+@media (max-width: 560px) {
+  body { padding: 20px 12px; }
+  header { flex-direction: column; text-align: center; padding: 20px; }
+  section { padding: 20px; }
+  h1 { font-size: 1.8rem; }
+  .projetos { grid-template-columns: 1fr; }
+}
+
+.projetos { display: grid; grid-template-columns: 1fr; }
+.projetos article { min-width: 0; max-width: none; width: 100%; }
