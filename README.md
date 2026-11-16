@@ -1,5 +1,7 @@
 # Página pessoal — Arthur Bruno
 
+[Demonstração online](https://arthurbrunos.github.io/projeto-listagem-pokemon/demos/portfolio/)
+
 Portfólio de estudo com apresentação, seleção de projetos, consulta ao perfil do GitHub e competências persistidas no navegador.
 
 ## Tecnologias
@@ -36,10 +38,12 @@ A verificação visual e as capturas de tela devem ser feitas após abrir a vers
 
 ## Demonstração e publicação
 
-Não há URL de demonstração pública validada nesta revisão. As alterações propostas não configuram nem publicam uma hospedagem. Para uma publicação futura, utilize o ponto de entrada da raiz e confira os caminhos dos arquivos.
+Demonstração publicada no GitHub Pages: https://arthurbrunos.github.io/projeto-listagem-pokemon/demos/portfolio/
+
+O site reúne cópias estáticas dos projetos no repositório projeto-listagem-pokemon. A versão publicada está registrada em projetos/versoes.json desse repositório. Alterações posteriores neste repositório de origem precisam ser copiadas novamente para atualizar a demonstração.
 
 ## Limitações e autoria
 
-O formulário não envia nem armazena mensagens. Competências ficam somente no navegador do visitante e não alteram o perfil público. O blog está identificado como privado, sem link público de demonstração. Capas em gradiente são elementos visuais, não capturas das aplicações.
+O formulário não envia nem armazena mensagens. Competências ficam somente no navegador do visitante e não alteram o perfil público. O repositório de desenvolvimento do blog é privado; a demonstração tem acesso público. Capas em gradiente são elementos visuais, não capturas das aplicações.
 
 Este README descreve a versão proposta nesta revisão. O histórico do Git preserva os autores e as contribuições anteriores. Materiais de curso, imagens e serviços de terceiros devem ter suas condições de uso verificadas antes de uma redistribuição; esta revisão não atribui autoria exclusiva nem adiciona uma licença aos recursos existentes.
