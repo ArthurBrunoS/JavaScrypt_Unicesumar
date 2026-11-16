@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="description" content="Portfólio de Arthur Bruno, estudante de Engenharia de Software com foco em desenvolvimento front-end.">
     <title>Arthur Bruno - Sobre mim</title>
 </head>
 <body>
     <header>
-        <img src="" alt="Foto de Arthur">
+        <img src="https://avatars.githubusercontent.com/u/133883144?v=4" alt="Foto de Arthur" width="140" height="140">
         <div>
-            <h1></h1>
-            <p class="cargo"></p>
+            <h1>Arthur Bruno</h1>
+            <p class="cargo">Estudante de Engenharia de Software</p>
         </div>
     </header>
 
     <main>
         <section>
             <h2>Sobre mim</h2>
-            <p>Olá! Sou Estudante de Engenharia de Software. Estou me desenvolvenvendo na parte
+            <p>Olá! Sou Estudante de Engenharia de Software. Estou me desenvolvendo na parte
                 de front-end mas tenho interesse em futuramente me tornar full-stack.
             </p>
             <p class="destaque">
@@ -47,29 +48,7 @@
 
         <section>
             <h2>Meus Projetos</h2>
-            <div class="projetos">
-                <article>
-                    <div class="projeto-imagem  projeto-1"></div>
-                        <h3>Calculadora IMC</h3>
-                        <p>App de calculadora simples feito com HTML,CSS e JS puro.</p>
-                        <a href="#">Ver projeto</a> 
-                </article>
-
-                <article>
-                    <div class="projeto-imagem  projeto-2"></div>
-                        <h3>Lista de tarefas</h3>
-                        <p>Blog reposnsivo construido do zero.</p>
-                        <a href="#">Ver projeto</a> 
-                </article>
-
-                <article>
-                    <div class="projeto-imagem projeto-3"></div>
-                        <h3>Blog</h3>
-                        <p>App de calculadora simples feito com HTML,CSS e JS puro</p>
-                        <a href="#">Ver projeto</a> 
-                </article>
-            </div>
-
+            <div class="projetos" aria-live="polite"></div>
         </section>
 
 
@@ -77,26 +56,27 @@
             <h2>Vamos conversar ?</h2>
             <p>Você pode me encontrar nos meus perfis ou enviar uma mensagem.</p>
             <div class="redes">
-            <a href="https://github.com/Arthusao22" target="_blank">
+            <a href="https://github.com/ArthurBrunoS" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Arthur Bruno">
                 <i class="fa-brands fa-github"></i>
             </a>
             
             </div>
-            <button class="btn-mensagem">Enviar mensagens</button>
+            <button class="btn-mensagem" type="button" aria-expanded="false" aria-controls="contact-form">Abrir formulário de demonstração</button>
 
-            <form class="formulario-contato escondido">
-                <label>Nome</label>
-                <input type="text" class="input-nome">
+            <form id="contact-form" class="formulario-contato escondido" aria-describedby="form-note">
+                <p id="form-note">Demonstração: os dados não são enviados nem armazenados.</p>
+                <label for="contact-name">Nome</label>
+                <input id="contact-name" type="text" class="input-nome" required maxlength="100">
 
-                <label>Email</label>
-                <input type="email" class="input-email">
+                <label for="contact-email">E-mail</label>
+                <input id="contact-email" type="email" class="input-email" required>
 
-                <label>Mensagem</label>
-                <input type="text" class="input-mensagem">
+                <label for="contact-message">Mensagem</label>
+                <textarea id="contact-message" class="input-mensagem" required minlength="10" maxlength="2000"></textarea>
 
                 <button type="submit">Enviar</button>
             </form>
-            <div class="feedback"></div>
+            <div class="feedback" role="status" aria-live="polite"></div>
         </section>
 
         <footer>
@@ -104,8 +84,8 @@
         </footer>
     </main>
 
-    <script src="./scripsts/formulario.js"></script>
-    <script src="./scripsts/skills.js"></script>
-    <script src="./scripsts/github-api.js"></script>
+    <script src="./scripts/formulario.js"></script>
+    <script src="./scripts/skills.js"></script>
+    <script src="./scripts/github-api.js"></script>
 </body>
 </html>
