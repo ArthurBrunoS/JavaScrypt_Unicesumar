@@ -1,6 +1,7 @@
 "use strict";
 const usuarioGithub = "ArthurBrunoS";
 const containerProjetos = document.querySelector(".projetos");
+const demonstracoes = {"Pokedex":"https://arthurbrunos.github.io/projeto-listagem-pokemon/demos/pokedex/","Projeto_FrontEnd_Unicesumar":"https://arthurbrunos.github.io/projeto-listagem-pokemon/demos/blog/","JavaScrypt_Unicesumar":"https://arthurbrunos.github.io/projeto-listagem-pokemon/demos/portfolio/"};
 const projetos = [
   { repo: "Pokedex", nome: "Pokédex", descricao: "Busca e listagem de Pokémon com integração à PokeAPI.", tecnologias: "HTML · CSS · JavaScript · API REST", cor: "projeto-1" },
   { repo: "Projeto_FrontEnd_Unicesumar", nome: "Blog de viagens e hobbies", descricao: "Blog com páginas de conteúdo, tema persistido e validação de formulário.", tecnologias: "HTML · CSS · JavaScript · localStorage", cor: "projeto-2", privado: true },
@@ -23,7 +24,7 @@ function renderizarProjetos() {
     article.append(cover, title, description, tech);
     if (projeto.privado) {
       const note = document.createElement("p");
-      note.textContent = "Código privado; demonstração pública ainda não disponível.";
+      note.textContent = "Repositório de desenvolvimento privado.";
       article.append(note);
     } else {
       const link = document.createElement("a");
@@ -31,6 +32,10 @@ function renderizarProjetos() {
       link.textContent = "Ver código de " + projeto.nome;
       article.append(link);
     }
+    const demo = document.createElement("a");
+    demo.href = demonstracoes[projeto.repo];
+    demo.textContent = "Abrir demonstração de " + projeto.nome;
+    article.append(demo);
     fragment.append(article);
   }
   containerProjetos.replaceChildren(fragment);
